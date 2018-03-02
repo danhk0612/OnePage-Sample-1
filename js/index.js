@@ -6,8 +6,8 @@ defaultUrl = "http://naver.com";
 */
 
 $(document).ready(function(){
-    $("#skill-desc").children().not(".card-title").toggle();
-    $("#project-desc").children().not(".card-title").toggle();
+    $("#skill-desc").children(".card-text").toggle();
+    $("#project-desc").children(".card-text").toggle();
 });
 
 $(".skill-icon").click(function() {

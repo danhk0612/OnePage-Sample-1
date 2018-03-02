@@ -25,7 +25,7 @@
 <body id="page-top">
 
   <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
-    <a class="navbar-brand" href="http://webdev.mydepot.kr/board/">
+    <a class="navbar-brand" href="http://webdev.mydepot.kr/html/">
       <h1 class="text-hide" style="background-image: url('../img/logo.jpg'); width:216px; height:28px;">webDev</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -403,7 +403,7 @@
     <div id="copyright" class="col-12 col-md-4">©
       <a href="http://webdev.mydepot.kr/" target="_self">webDev</a>, All rights reserved.</div>
     <div class="col-0 col-md-6"></div>
-    <div id="mailadress" class="col-12 col-md-2">gorhkd0612@gmail.com</div>
+    <div id="mailadress" class="col-12 col-md-2">danhk0612@gmail.com</div>
   </div>
 
 

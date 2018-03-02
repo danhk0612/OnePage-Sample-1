@@ -32,6 +32,9 @@ a {
 .navbar .fa{
     padding-right: .5rem;
 }
+.navbar .fas{
+    padding-right: .5rem;
+}
 @media screen and (max-width: 1200px) {
     .navbar .show>.nav-link {
         display: none;
@@ -135,7 +138,6 @@ p.skill-icon {
     margin:1rem;
     color: #000;
 }
-
 #project .row {
     text-align:center;
 }
