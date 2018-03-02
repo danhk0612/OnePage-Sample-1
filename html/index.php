@@ -307,9 +307,8 @@
               <?php 
               if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCompany-Sample-1%2FREADME.md&select=address', 'r')) {
                 $content = '';
-                while ($line = fgets($fp, 1024)) {
-                  echo $line;
-                }
+                $line = fread($fp, 1024);
+                echo $line;
               } else {
               } 
               ?>
@@ -318,9 +317,8 @@
               <?php 
               if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FOnePage-Sample-1%2FREADME.md&select=address', 'r')) {
                 $content = '';
-                while ($line = fgets($fp, 1024)) {
-                  echo $line;
-                }
+                $line = fread($fp, 1024);
+                echo $line;
               } else {
               } 
               ?>
@@ -329,9 +327,8 @@
               <?php 
               if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FREADME.md&select=address', 'r')) {
                 $content = '';
-                while ($line = fgets($fp, 1024)) {
-                  echo $line;
-                }
+                $line = fread($fp, 1024);
+                echo $line;
               } else {
               } 
               ?>
@@ -340,9 +337,8 @@
               <?php 
               if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FShop-Sample-1%2FREADME.md&select=address', 'r')) {
                 $content = '';
-                while ($line = fgets($fp, 1024)) {
-                  echo $line;
-                }
+                $line = fread($fp, 1024);
+                echo $line;
               } else {
               } 
               ?>
