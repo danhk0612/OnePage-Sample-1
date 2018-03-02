@@ -20,10 +20,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
 </head>
+<div id="loading">
+  <img id="loading-image" src="../img/loading.gif" alt="Loading..." />
+</div>
 
 <body id="page-top">
-
   <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
     <a class="navbar-brand" href="http://webdev.mydepot.kr/html/">
       <h1 class="text-hide" style="background-image: url('../img/logo.jpg'); width:216px; height:28px;">webDev</h1>
@@ -418,7 +421,11 @@
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
+  <script type="text/javascript">
+    $(window).on('load', function () {
+      $('#loading').hide();
+    });
+  </script>
 </body>
 
 </html>
