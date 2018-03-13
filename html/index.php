@@ -10,11 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+  <link rel="shortcut icon" href="../favicon.ico">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/initialize.css">
   <link rel="stylesheet" href="../css/index.css">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/font-mfizz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -28,7 +29,7 @@
 
 <body id="page-top">
   <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
-    <a class="navbar-brand" href="http://webdev.mydepot.kr/html/">
+    <a id="logo" class="navbar-brand" href="#">
       <h1 class="text-hide" style="background-image: url('../img/logo.jpg'); width:216px; height:28px;">webDev</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -38,24 +39,23 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto justify-content-end list-group">
-        <li class="nav-item">
-          <a class="nav-link list-group-item-action" href="#about-outer">
+        <li class="nav-item" data-target="#about-outer">
+          <a class="nav-link list-group-item-action" href="#">
             <i class="fa fa-user" aria-hidden="true"></i>About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link list-group-item-action" href="#skill-outer">
+        <li class="nav-item" data-target="#skill-outer">
+          <a class="nav-link list-group-item-action" href="#">
             <i class="fa fa-keyboard" aria-hidden="true"></i>Skill</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link list-group-item-action" href="#project-outer">
+        <li class="nav-item" data-target="#project-outer">
+          <a class="nav-link list-group-item-action" href="#">
             <i class="fa fa-check-square" aria-hidden="true"></i>Projects</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link list-group-item-action" href="#resume-outer">
+        <li class="nav-item" data-target="#resume-outer">
+          <a class="nav-link list-group-item-action" href="#">
             <i class="fa fa-file" aria-hidden="true"></i>Resume</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link list-group-item-action" href="#link-outer">
+        <li class="nav-item" data-target="#link-outer">
+          <a class="nav-link list-group-item-action" href="#">
             <i class="fa fa-bookmark" aria-hidden="true"></i>Link</a>
         </li>
 
@@ -114,11 +114,17 @@
 
   <div class="container-fluid row bg-blue justify-content-center" id="profile-outer">
     <div id="profile" class="col-12 col-md-6">
-      <h1>Hello, Visitors!</h1>
+      <h1>WebDev에 오신것을 환영합니다.</h1>
       <p>
-        .col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone for an example..col-xs-6 .col-sm-3 Resize your viewport
-        or check it out on your phone for an example..col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone
-        for an example.
+      <?php
+if ($fp = fopen('./txt/introduce.txt', 'r')) {
+    $content = '';
+    while ($line = fgets($fp, 1024)) {
+        echo $line;
+    }
+} else {
+}
+?>
       </p>
     </div>
   </div>
@@ -127,9 +133,15 @@
     <div id="about" class="col-12 col-md-8 inner-box">
       <h1>About</h1>
       <p>
-        .col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone for an example..col-xs-6 .col-sm-3 Resize your viewport
-        or check it out on your phone for an example..col-xs-6 .col-sm-3 Resize your viewport or check it out on your phone
-        for an example.
+      <?php
+if ($fp = fopen('./txt/about.txt', 'r')) {
+    $content = '';
+    while ($line = fgets($fp, 1024)) {
+        echo $line;
+    }
+} else {
+}
+?>
       </p>
     </div>
   </div>
@@ -154,6 +166,36 @@
           </p>
         </div>
         <div class="col-auto">
+          <p class="skill-icon" id="bootstrap">
+            <i class="icon-bootstrap"></i>
+          </p>
+        </div>
+        <div class="col-auto">
+          <p class="skill-icon" id="materialize">
+            Material
+          </p>
+        </div>
+        <div class="col-auto">
+          <p class="skill-icon" id="foundation">
+            F
+          </p>
+        </div>
+        <div class="col-auto">
+          <p class="skill-icon" id="jquery">
+            <i class="icon-jquery"></i>
+          </p>
+        </div>
+        <div class="col-auto">
+          <p class="skill-icon" id="git">
+            <i class="fab fa-git"></i>
+          </p>
+        </div>
+        <div class="col-auto">
+          <p class="skill-icon" id="sass">
+            <i class="fab fa-sass"></i>
+          </p>
+        </div>
+        <div class="col-auto">
           <p class="skill-icon" id="php">
             <i class="fab fa-php"></i>
           </p>
@@ -164,16 +206,6 @@
         </div>
         <div class="col-auto">
           <p class="skill-icon" id="office">Office</p>
-        </div>
-        <div class="col-auto">
-          <p class="skill-icon" id="bootstrap">
-            <i class="icon-bootstrap"></i>
-          </p>
-        </div>
-        <div class="col-auto">
-          <p class="skill-icon" id="jquery">
-            <i class="icon-jquery"></i>
-          </p>
         </div>
         <div class="col-auto">
           <p class="skill-icon" id="windows">
@@ -191,66 +223,93 @@
           </p>
         </div>
         <div class="col-auto">
-          <p class="skill-icon" id="git">
-            <i class="fab fa-git"></i>
-          </p>
-        </div>
-        <div class="col-auto">
-          <p class="skill-icon" id="sass">
-            <i class="fab fa-sass"></i>
-          </p>
-        </div>
-        <div class="col-auto">
           <p class="skill-icon" id="vue">
             <i class="fab fa-vuejs"></i>
           </p>
         </div>
       </div>
       <div id="skill-card">
-        <div class="card bg-light">
+        <div class="card">
           <div class="card-body" id="skill-desc">
-            <h5 class="card-title">각 아이콘을 클릭하시면 상세 설명이 나타납니다.</h5>
             <div class="card-text" id="html5-desc">
-              html5
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><abbr title="HTML5">HTML</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="css3-desc">
-              css3
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><abbr title="CSS3">CSS</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="javascript-desc">
-              javascript
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><abbr title="자바스크립트">Javascript</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="php-desc">
-              php
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><abbr title="PHP">PHP</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="linux-desc">
-              linux
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><abbr title="우분투">리눅스</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="office-desc">
-              office
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><abbr title="MS오피스,한글 등">Office</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="bootstrap-desc">
-              bootstrap
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><abbr title="부트스트랩 3~4">Bootstrap</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="jquery-desc">
-              jquery
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><abbr title="제이쿼리">jQuery</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="windows-desc">
-              temp1
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"><abbr title="Windows 3.1~10 (도스 포함)">Windows</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="apache-desc">
-              temp2
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><abbr title="라즈베리파이에 서버 구축 및 호스팅, 가상서버 이용">Apache</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="nginx-desc">
-              temp3
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><abbr title="윈도우 홈 서버에 NginX+MariaDB로 구축">NginX</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="git-desc">
-              temp4
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><abbr title="깃헙에 현재 저장소 구축 및 사용중">Git</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="sass-desc">
-              sass
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><abbr title="현재 진행중인 작업물 대부분에 사용하여 개발">Sass</abbr></div>
+              </div>
             </div>
             <div class="card-text" id="vue-desc">
-              vue.js
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><abbr title="현재 학습중">Vue.js</abbr></div>
+              </div>
+            </div>
+            <div class="card-text" id="materialize-desc">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><abbr title="Materialize Front-end Framework">Materialize</abbr></div>
+              </div>
+            </div>
+            <div class="card-text" id="foundation-desc">
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><abbr title="Foundation Front-end Framework 6">Foundation</abbr></div>
+              </div>
             </div>
           </div>
         </div>
@@ -264,27 +323,27 @@
       <div class="row justify-content-center">
         <div class="col-auto">
           <p class="project-banner" id="project-1">
-            커뮤니티형 샘플
+            <abbr title="커뮤니티형 샘플"><i class="fas fa-comment-alt"></i></abbr>
           </p>
         </div>
         <div class="col-auto">
           <p class="project-banner" id="project-2">
-            회사 소개형 샘플
+            <abbr title="회사 공식사이트형 샘플"><i class="fas fa-building"></i></abbr>
           </p>
         </div>
         <div class="col-auto">
           <p class="project-banner" id="project-3">
-            포트폴리오형
+            <abbr title="개인 포트폴리오형"><i class="fas fa-list-alt"></i></abbr>
           </p>
         </div>
         <div class="col-auto">
           <p class="project-banner" id="project-4">
-            인덱스 페이지
+            <abbr title="인덱스 페이지"><i class="fas fa-window-maximize"></i></abbr>
           </p>
         </div>
         <div class="col-auto">
           <p class="project-banner" id="project-5">
-            쇼핑몰형 샘플
+            <abbr title="쇼핑몰형 샘플"><i class="fas fa-cart-plus"></i></abbr>
           </p>
         </div>
       </div>
@@ -293,55 +352,55 @@
           <div class="card-body" id="project-desc">
             <h5 class="card-title">각 배너를 클릭하시면 상세 설명이 나타납니다.</h5>
             <div class="card-text" id="project-1-desc">
-              <?php 
-              if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCommunity-Sample-1%2FREADME.md&select=address', 'r')) {
-                $content = '';
-                while ($line = fgets($fp, 1024)) {
-                  echo $line;
-                }
-              } else {
-              } 
-              ?>
+              <?php
+if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCommunity-Sample-1%2FREADME.md&select=address', 'r')) {
+    $content = '';
+    while ($line = fgets($fp, 1024)) {
+        echo $line;
+    }
+} else {
+}
+?>
             </div>
             <div class="card-text" id="project-2-desc">
-              <?php 
-              if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCompany-Sample-1%2FREADME.md&select=address', 'r')) {
-                $content = '';
-                $line = fread($fp, 1024);
-                echo $line;
-              } else {
-              } 
-              ?>
+              <?php
+if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCompany-Sample-1%2FREADME.md&select=address', 'r')) {
+    $content = '';
+    $line = fread($fp, 1024);
+    echo $line;
+} else {
+}
+?>
             </div>
             <div class="card-text" id="project-3-desc">
-              <?php 
-              if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FOnePage-Sample-1%2FREADME.md&select=address', 'r')) {
-                $content = '';
-                $line = fread($fp, 1024);
-                echo $line;
-              } else {
-              } 
-              ?>
+              <?php
+if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FOnePage-Sample-1%2FREADME.md&select=address', 'r')) {
+    $content = '';
+    $line = fread($fp, 1024);
+    echo $line;
+} else {
+}
+?>
             </div>
             <div class="card-text" id="project-4-desc">
-              <?php 
-              if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FREADME.md&select=address', 'r')) {
-                $content = '';
-                $line = fread($fp, 1024);
-                echo $line;
-              } else {
-              } 
-              ?>
+              <?php
+if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FREADME.md&select=address', 'r')) {
+    $content = '';
+    $line = fread($fp, 1024);
+    echo $line;
+} else {
+}
+?>
             </div>
             <div class="card-text" id="project-5-desc">
-              <?php 
-              if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FShop-Sample-1%2FREADME.md&select=address', 'r')) {
-                $content = '';
-                $line = fread($fp, 1024);
-                echo $line;
-              } else {
-              } 
-              ?>
+              <?php
+if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FShop-Sample-1%2FREADME.md&select=address', 'r')) {
+    $content = '';
+    $line = fread($fp, 1024);
+    echo $line;
+} else {
+}
+?>
             </div>
           </div>
         </div>
@@ -358,13 +417,10 @@
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <h6 class="dropdown-header">Download</h6>
-          <a class="dropdown-item" href="#">docx file</a>
-          <a class="dropdown-item" href="#">hwp file</a>
-          <a class="dropdown-item" href="#">pdf file</a>
+          <a class="dropdown-item" href="../resume/resume.pdf">pdf file</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">View</h6>
-          <a class="dropdown-item" href="#">LinkdIn</a>
-          <a class="dropdown-item" href="#">사람인</a>
+          <a class="dropdown-item" href="http://resume.mydepot.kr" target="_blank">Web Resume</a>
         </div>
       </div>
     </div>
@@ -376,21 +432,18 @@
       <div class="row justify-content-center">
         <div class="col-auto">
           <p class="link-icon">
-            <i class="fa fa-html5" aria-hidden="true"></i>
+            <a href="https://github.com/danhk0612/" title="깃헙 프로필" target="_blank"><i class="fab fa-github-square"></i></a>
           </p>
         </div>
         <div class="col-auto">
           <p class="link-icon">
-            <i class="fab fa-css3-alt" aria-hidden="true"></i>
+            <a href="https://www.facebook.com/danhk0612" title="페이스북" target="_blank"><i class="fab fa-facebook-square"></i></a>
           </p>
         </div>
         <div class="col-auto">
           <p class="link-icon">
-            <i class="fab fa-js-square" aria-hidden="true"></i>
+            <a href="http://blog.mydepot.kr/" title="블로그" target="_blank"><i class="fab fa-wordpress"></i></a>
           </p>
-        </div>
-        <div class="col-auto">
-          <p class="link-icon">PHP</p>
         </div>
       </div>
     </div>
@@ -404,8 +457,6 @@
     <div class="col-0 col-md-6"></div>
     <div id="mailadress" class="col-12 col-md-2">danhk0612@gmail.com</div>
   </div>
-
-
 
   <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="

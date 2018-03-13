@@ -1,0 +1,18 @@
+<div class="row">
+<div class="col-12 col-xl-4 align-self-center">
+<img src="http://via.placeholder.com/300x300" class="img-fluid">
+</div>
+<div class="col-12 col-xl-8">
+이 곳은 jQuery및 부트스트랩으로 제작된 반응형 웹 페이지 입니다.<br>
+<br>
+webDev에 접속하신 모든 분들, 반갑습니다.<br>
+저는 웹 프론트엔드 개발을 주로 하고 있습니다.<br>
+아래에 제가 보유한 Skill과 작업물을 정리해 놓았습니다. 한번 둘러보세요!
+<hr>
+This is a responsive web page built with jQuery and bootstrap css framework.<br>
+<br>
+Welcome to webDev.<br>
+I usually doing front-end development.<br>
+Below is my skill and my production list. Take a look!<br>
+</div>
+</div>

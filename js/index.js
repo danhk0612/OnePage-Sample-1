@@ -11,23 +11,40 @@ $(document).ready(function(){
 });
 
 $(".skill-icon").click(function() {
-    var name_by_id = $(this).attr("id");
+    let name_by_id = $(this).attr("id");
+    let sel_desc = $("#"+name_by_id+"-desc");
     $(this).toggleClass("on");
     $(this).parent().siblings().children(".skill-icon").removeClass("on");
-    $("#skill-desc").children("#"+name_by_id+"-desc").toggle();
-    $("#skill-desc").children("#"+name_by_id+"-desc").siblings().hide();
+    let bar_width = sel_desc.children(".progress").children(".progress-bar").attr("aria-valuenow")+"%";
+    sel_desc.children(".progress").children(".progress-bar").animate({
+        width:bar_width
+    },200);
+    sel_desc.siblings().children(".progress").children(".progress-bar").width(0);
+    sel_desc.toggle().siblings().hide();
     //$("#skill-desc .card-title").text(name_by_id);
 });
 
 $(".project-banner").click(function() {
     var name_by_id = $(this).attr("id");
+    let sel_desc = $("#"+name_by_id+"-desc");
     $(this).toggleClass("on");
     $(this).parent().siblings().children(".project-banner").removeClass("on");
-    $("#project-desc").children("#"+name_by_id+"-desc").toggle();
-    $("#project-desc").children("#"+name_by_id+"-desc").siblings().hide();
+    sel_desc.toggle().siblings().hide();
     //$("#skill-desc .card-title").text(name_by_id);
 });
 
+$("#navbarSupportedContent ul li.nav-item").click(function() {
+    var scrollPosition = $($(this).attr("data-target")).offset().top;
+    $("html").animate({
+        scrollTop: scrollPosition
+    }, 500);
+});
+
+$("#logo").click(function() {
+    $("html").animate({
+        scrollTop: 0
+    }, 500);
+});
 /*
 var linkArr= [
      {title : '.practice', url : 'http://webdev.mydepot.kr/board/bbs/board.php?bo_table=pm_prac'}, 
