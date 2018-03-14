@@ -346,6 +346,11 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
             <abbr title="쇼핑몰형 샘플"><i class="fas fa-cart-plus"></i></abbr>
           </p>
         </div>
+        <div class="col-auto">
+          <p class="project-banner" id="project-6">
+            <abbr title="회사 공식사이트형 샘플"><i class="fas fa-building"></i></abbr>
+          </p>
+        </div>
       </div>
       <div id="project-card">
         <div class="card bg-light">
@@ -395,6 +400,16 @@ if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2F
             <div class="card-text" id="project-5-desc">
               <?php
 if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FShop-Sample-1%2FREADME.md&select=address', 'r')) {
+    $content = '';
+    $line = fread($fp, 1024);
+    echo $line;
+} else {
+}
+?>
+            </div>
+            <div class="card-text" id="project-6-desc">
+              <?php
+if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCompany2-Sample-2%2FREADME.md&select=address', 'r')) {
     $content = '';
     $line = fread($fp, 1024);
     echo $line;
