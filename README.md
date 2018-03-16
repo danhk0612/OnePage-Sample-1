@@ -19,4 +19,4 @@
 
 ## Screenshot
 
-![스크린샷](img/sample1.png) 
+![스크린샷](https://github.com/danhk0612/OnePage-Sample-1/raw/master/img/sample1.png) 
