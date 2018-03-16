@@ -19,4 +19,4 @@
 
 ## Screenshot
 
-![스크린샷](img/sample1.png “스크린샷”) 
+![스크린샷](img/sample1.png) 
