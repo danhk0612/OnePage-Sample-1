@@ -16,3 +16,7 @@
 - CSS (included CSS3)
 - Javascript (included Jquery)
 - Bootstrap Front-end Framework 4
+
+## Screenshot
+
+![스크린샷](img/sample1.png “스크린샷”) 
