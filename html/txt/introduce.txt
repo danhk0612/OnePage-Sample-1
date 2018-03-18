@@ -1,6 +1,6 @@
 <div class="row">
 <div class="col-12 col-xl-4 align-self-center">
-<img src="../img/profile.png" class="img-fluid">
+<img src="https://danhk0612.github.io/OnePage-Sample-1/img/profile.png" class="img-fluid">
 </div>
 <div class="col-12 col-xl-8">
 이 곳은 jQuery및 부트스트랩으로 제작된 반응형 웹 페이지 입니다.<br>

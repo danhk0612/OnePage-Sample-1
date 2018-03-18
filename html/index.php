@@ -10,11 +10,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/initialize.css">
-  <link rel="stylesheet" href="../css/index.css">
-  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://danhk0612.github.io/OnePage-Sample-1/favicon.ico">
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/normalize.css">
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/initialize.css">
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/index.css">
+  <link href="https://danhk0612.github.io/OnePage-Sample-1/css/fontawesome-all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
 
 
@@ -24,13 +24,13 @@
 
 </head>
 <div id="loading">
-  <img id="loading-image" src="../img/loading.gif" alt="Loading..." />
+  <img id="loading-image" src="https://danhk0612.github.io/OnePage-Sample-1/img/loading.gif" alt="Loading..." />
 </div>
 
 <body id="page-top">
   <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
     <a id="logo" class="navbar-brand" href="#">
-      <h1 class="text-hide" style="background-image: url('../img/logo.jpg'); width:216px; height:28px;">webDev</h1>
+      <h1 class="text-hide" style="background-image: url('https://danhk0612.github.io/OnePage-Sample-1/img/logo.jpg'); width:216px; height:28px;">webDev</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -432,7 +432,7 @@ if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2F
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
           <h6 class="dropdown-header">Download</h6>
-          <a class="dropdown-item" href="../resume/resume.pdf">pdf file</a>
+          <a class="dropdown-item" href="https://danhk0612.github.io/OnePage-Sample-1/resume/resume.pdf">pdf file</a>
           <div class="dropdown-divider"></div>
           <h6 class="dropdown-header">View</h6>
           <a class="dropdown-item" href="http://resume.mydepot.kr" target="_blank">Web Resume</a>
@@ -473,12 +473,12 @@ if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2F
     <div id="mailadress" class="col-12 col-md-2">danhk0612@gmail.com</div>
   </div>
 
-  <script src="../js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="https://danhk0612.github.io/OnePage-Sample-1/js/vendor/modernizr-3.5.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-  <script src="../js/plugins.js"></script>
-  <script src="../js/index.js"></script>
+  <script>window.jQuery || document.write('<script src="https://danhk0612.github.io/OnePage-Sample-1/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script src="https://danhk0612.github.io/OnePage-Sample-1/js/plugins.js"></script>
+  <script src="https://danhk0612.github.io/OnePage-Sample-1/js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
