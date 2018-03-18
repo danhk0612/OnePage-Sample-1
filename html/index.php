@@ -40,22 +40,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto justify-content-end list-group">
         <li class="nav-item" data-target="#about-outer">
-          <a class="nav-link list-group-item-action" href="#">
+          <a class="nav-link list-group-item-action" href="#about-outer">
             <i class="fa fa-user" aria-hidden="true"></i>About</a>
         <li class="nav-item" data-target="#skill-outer">
-          <a class="nav-link list-group-item-action" href="#">
+          <a class="nav-link list-group-item-action" href="#skill-outer">
             <i class="fa fa-keyboard" aria-hidden="true"></i>Skill</a>
         </li>
         <li class="nav-item" data-target="#project-outer">
-          <a class="nav-link list-group-item-action" href="#">
+          <a class="nav-link list-group-item-action" href="#project-outer">
             <i class="fa fa-check-square" aria-hidden="true"></i>Projects</a>
         </li>
         <li class="nav-item" data-target="#resume-outer">
-          <a class="nav-link list-group-item-action" href="#">
+          <a class="nav-link list-group-item-action" href="#resume-outer">
             <i class="fa fa-file" aria-hidden="true"></i>Resume</a>
         </li>
         <li class="nav-item" data-target="#link-outer">
-          <a class="nav-link list-group-item-action" href="#">
+          <a class="nav-link list-group-item-action" href="#link-outer">
             <i class="fa fa-bookmark" aria-hidden="true"></i>Link</a>
         </li>
 
