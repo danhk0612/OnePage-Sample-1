@@ -184,6 +184,9 @@ p.project-banner {
     margin:1rem;
     color: #000;
 }
+.card-text img {
+    max-width: 100%;
+}
 .card-text .progress {
     height: 50px;
 }
