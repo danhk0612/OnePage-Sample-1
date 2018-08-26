@@ -30,7 +30,7 @@
 <body id="page-top">
   <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
     <a id="logo" class="navbar-brand" href="#">
-      <h1 class="text-hide" style="background-image: url('https://danhk0612.github.io/OnePage-Sample-1/img/logo.jpg'); width:216px; height:28px;">webDev</h1>
+      <h1 class="text-hide" style="background-image: url('https://danhk0612.github.io/OnePage-Sample-1/img/logo.png'); width:216px; height:28px;">webDev</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
