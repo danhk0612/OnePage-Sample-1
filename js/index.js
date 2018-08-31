@@ -43,6 +43,10 @@ $("#navbarSupportedContent ul li.nav-item").click(function() {
     }, 500);
 });
 
+$(".nav-item").click(function(){
+    $("#navbarSupportedContent").removeClass("show");
+});
+
 $("#logo").click(function() {
     $("html").animate({
         scrollTop: 0
