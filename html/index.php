@@ -8,7 +8,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Webdev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
   <link rel="shortcut icon" href="https://danhk0612.github.io/OnePage-Sample-1/favicon.ico">
   <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/normalize.css">
@@ -351,72 +351,37 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
             <abbr title="회사 공식사이트형 샘플"><i class="fas fa-building"></i></abbr>
           </p>
         </div>
+        <div class="col-auto">
+          <p class="project-banner" id="project-7">
+            <abbr title="유튜브형 샘플"><i class="fab fa-youtube"></i></abbr>
+          </p>
+        </div>
       </div>
       <div id="project-card">
         <div class="card bg-light">
           <div class="card-body" id="project-desc">
             <h5 class="card-title">각 배너를 클릭하시면 상세 설명이 나타납니다.</h5>
             <div class="card-text" id="project-1-desc">
-              <?php
-if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCommunity-Sample-1%2FREADME.md&select=address', 'r')) {
-    $content = '';
-    while ($line = fgets($fp, 1024)) {
-        echo $line;
-    }
-} else {
-}
-?>
+
             </div>
             <div class="card-text" id="project-2-desc">
-              <?php
-if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCompany-Sample-1%2FREADME.md&select=address', 'r')) {
-    $content = '';
-    $line = fread($fp, 1024);
-    echo $line;
-} else {
-}
-?>
+
             </div>
             <div class="card-text" id="project-3-desc">
-              <?php
-if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FOnePage-Sample-1%2FREADME.md&select=address', 'r')) {
-    $content = '';
-    $line = fread($fp, 1024);
-    echo $line;
-} else {
-}
-?>
+
             </div>
             <div class="card-text" id="project-4-desc">
-              <?php
-if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FREADME.md&select=address', 'r')) {
-    $content = '';
-    $line = fread($fp, 1024);
-    echo $line;
-} else {
-}
-?>
+
             </div>
             <div class="card-text" id="project-5-desc">
-              <?php
-if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FShop-Sample-1%2FREADME.md&select=address', 'r')) {
-    $content = '';
-    $line = fread($fp, 1024);
-    echo $line;
-} else {
-}
-?>
+
             </div>
             <div class="card-text" id="project-6-desc">
-              <?php
-if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2Fdanhk0612.github.io%2FCompany-Sample-2%2FREADME.md&select=address', 'r')) {
-    $content = '';
-    $line = fread($fp, 1024);
-    echo $line;
-} else {
-}
-?>
+
             </div>
+            <div class="card-text" id="project-7-desc">
+
+</div>
           </div>
         </div>
       </div>
@@ -478,7 +443,7 @@ if ($fp = fopen('http://test.mydepot.kr/mark-to-html.php?original=https%3A%2F%2F
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="https://danhk0612.github.io/OnePage-Sample-1/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
   <script src="https://danhk0612.github.io/OnePage-Sample-1/js/plugins.js"></script>
-  <script src="https://danhk0612.github.io/OnePage-Sample-1/js/index.js"></script>
+  <script src="../js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="../js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"

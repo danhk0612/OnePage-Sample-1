@@ -24,4 +24,5 @@ if($_GET['original']){
 }else{
     echo '내용을 입력해 주세요';
 }
+echo '<footer class="blockquote-footer"><a href="http://test.mydepot.kr/" target="_blank">Using Markdown Converter to HTML for this Page</a></footer>';
 ?>

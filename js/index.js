@@ -8,6 +8,9 @@ defaultUrl = "http://naver.com";
 $(document).ready(function(){
     $("#skill-desc").children(".card-text").toggle();
     $("#project-desc").children(".card-text").toggle();
+    for(let i=1;i<8;i++){
+        $("#project-"+i+"-desc").load("project-"+i+"-desc.php", function(){});
+    }    
 });
 
 $(".skill-icon").click(function() {

@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js" lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Disqus Page</title>
+  <meta name="description" content="Webdev's Community">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="../board/theme/webdev_v1/css/normalize.css">
+  <link rel="stylesheet" href="../board/theme/webdev_v1/css/initialize.css">
+  <link rel="stylesheet" href="../board/theme/webdev_v1/css/index.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
+    <a class="navbar-brand" href="http://webdev.mydepot.kr/html">
+      <h1 class="text-hide" style="background-image: url('../board/theme/webdev_v1/img/logo.jpg'); width:216px; height:28px;">webDev</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto justify-content-end list-group">
+        <li class="nav-item">
+          <a class="nav-link list-group-item-action" href="http://webdev.mydepot.kr/html/#about-outer">
+            <i class="fa fa-user-o" aria-hidden="true"></i>About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link list-group-item-action" href="http://webdev.mydepot.kr/html/#skill-outer">
+            <i class="fa fa-keyboard-o" aria-hidden="true"></i>Skill</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link list-group-item-action" href="http://webdev.mydepot.kr/html/#project-outer">
+            <i class="fa fa-check-square-o" aria-hidden="true"></i>Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link list-group-item-action" href="http://webdev.mydepot.kr/html/#resume-outer">
+            <i class="fa fa-file-o" aria-hidden="true"></i>Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link list-group-item-action" href="http://webdev.mydepot.kr/html/#link-outer">
+            <i class="fa fa-bookmark-o" aria-hidden="true"></i>Link</a>
+        </li>
+
+        <div class="commu-menu">
+          <li class="nav-item">
+            <a class="nav-link list-group-item-action practice" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=pm_prac"
+              target="_self">
+              <i class="fa fas fa-code-branch"></i>Practice(Pm)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-group-item-action practice2" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=dev_prac"
+              target="_self">
+              <i class="fa fa-file-code" aria-hidden="true"></i>Practice(Dev)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-group-item-action memo" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=study" target="_self">
+              <i class="fas fa-pencil-alt"></i>Memo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-group-item-action community2" href="http://webdev.mydepot.kr/html/disqus.html" target="_self">
+              <i class="fa fa-user" aria-hidden="true"></i>Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link list-group-item-action favorite" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=link" target="_self">
+              <i class="fa fa-star" aria-hidden="true"></i>Favorite</a>
+          </li>
+        </div>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <div class="dropdown-menu dropdown-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item practice" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=pm_prac">
+              <i class="fa fas fa-code-branch"></i>Practice(Pm)</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item practice2" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=dev_prac">
+              <i class="fa fa-file-code" aria-hidden="true"></i>Practice(Dev)</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item memo" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=study">
+              <i class="fas fa-pencil-alt"></i>Memo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item community2" href="http://webdev.mydepot.kr/html/disqus.html">
+              <i class="fa fa-user" aria-hidden="true"></i>Community</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item favorite" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=link">
+              <i class="fa fa-star" aria-hidden="true"></i>Favorite</a>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+  <div id="toTop">
+    <span class="hvr-icon-up"></span>
+  </div>
+
+
+  <div class="container-fluid row justify-content-center" id="disqus">
+    <div id="disqus_thread" class="col-12 col-md-8 inner-box"></div>
+    <script>
+    
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://webdev-5.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                                       
+</div>
+
+  <div id="bottom-bar" class="container-fluid row">
+    <div id="copyright" class="col-12 col-md-4">©
+      <a href="http://webdev.mydepot.kr/" target="_self">webDev</a>, All rights reserved.</div>
+    <div class="col-0 col-md-6"></div>
+    <div id="mailadress" class="col-12 col-md-2">gorhkd0612@gmail.com</div>
+  </div>
+
+
+  <script src="../board/theme/webdev_v1/js/vendor/modernizr-3.5.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../board/theme/webdev_v1/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+  <script src="../board/theme/webdev_v1/js/plugins.js"></script>
+  <script src="../board/theme/webdev_v1/js/index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/c2a2dc1705.js"></script>
+</body>
+
+</html>
