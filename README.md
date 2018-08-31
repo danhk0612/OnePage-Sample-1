@@ -4,8 +4,7 @@
 
 ## URL
 
-- 실제 운영 : http://webdev.mydepot.kr
-- https://danhk0612.github.io/OnePage-Sample-1/
+- http://webdev.mydepot.kr
 
 ## Tech
 
