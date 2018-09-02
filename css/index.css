@@ -8,10 +8,10 @@ a {
 /* Navbar Start*/
 .navbar{
     padding: 1rem;
+    background-color: #000 !important;
+    opacity: 0.5;
 }
-.navbar-light{
-    border-bottom: 1px solid #000;
-}
+
 .navbar .dropdown{
     padding-left: 2rem;
 }
@@ -35,8 +35,13 @@ a {
 .navbar .fas{
     padding-right: .5rem;
 }
-
-@media screen and (max-width: 1200px) {
+.navbar-toggler-icon {
+    color: #fff !important;
+}
+.mainCategory{
+    color: #fff !important;
+}
+@media screen and (max-width: 1199px) {
     .navbar .show>.nav-link {
         display: none;
     }
@@ -57,6 +62,24 @@ a {
     .xl_hr {
         display: none;
     }
+    .bigNavbar {
+        height: 80px;
+    }
+    .bigNavbar > ul {
+        width: 100%;
+    }
+    .bigNavbar > ul > li > a.mainCategory {
+        font-size: 1.2rem;
+    }
+    #subMenu.hideMenu {
+        display: none;
+    }
+    .bigNavbar > ul > li > a.mainCategory:hover {
+        font-size: 1.4rem;
+    }
+}
+.nav-link:hover {
+    background-color: transparent !important;
 }
 /* Navbar End */
 
@@ -77,7 +100,7 @@ a {
     color: #000;
 }
 .bg-blue {
-    background-color: rgb(95, 122, 196);
+    background-color: #0979cd;
     color: #fff;
 
 }
@@ -105,10 +128,10 @@ a {
     left: 0;
 }
 .triangle_right {
-    background-image: linear-gradient(to left bottom, rgb(95, 122, 196) 0%, rgb(95, 122, 196) 50%, transparent 50%);
+    background-image: linear-gradient(to left bottom, #0979cd 0%, #0979cd 50%, transparent 50%);
 }
 .triangle_left {
-    background-image: linear-gradient(to left top, rgb(95, 122, 196) 0%, rgb(95, 122, 196) 50%, transparent 50%);
+    background-image: linear-gradient(to left top, #0979cd 0%, #0979cd 50%, transparent 50%);
 }
 #skill .row {
     text-align:center;
@@ -274,3 +297,16 @@ p.link-icon {
  top: 50%;  
  left: 50%; 
  z-index: 100; }
+
+ .sunFlower {
+    font-family: 'Sunflower', sans-serif;
+}
+
+.sunFlowerBold {
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 700;
+}
+
+.poorStory {
+    font-family: 'Poor Story', cursive;
+}

@@ -5,49 +5,49 @@ let defaultUrl = "http://webdev.mydepot.kr";
 defaultUrl = "http://naver.com";
 */
 
-$(document).ready(function(){
+$(document).ready(function () {
     $("#skill-desc").children(".card-text").toggle();
     $("#project-desc").children(".card-text").toggle();
-    for(let i=1;i<8;i++){
-        $("#project-"+i+"-desc").load("project-"+i+"-desc.php", function(){});
-    }    
+    for (let i = 1; i < 8; i++) {
+        $("#project-" + i + "-desc").load("project-" + i + "-desc.php", function () {});
+    }
 });
 
-$(".skill-icon").click(function() {
+$(".skill-icon").click(function () {
     let name_by_id = $(this).attr("id");
-    let sel_desc = $("#"+name_by_id+"-desc");
+    let sel_desc = $("#" + name_by_id + "-desc");
     $(this).toggleClass("on");
     $(this).parent().siblings().children(".skill-icon").removeClass("on");
-    let bar_width = sel_desc.children(".progress").children(".progress-bar").attr("aria-valuenow")+"%";
+    let bar_width = sel_desc.children(".progress").children(".progress-bar").attr("aria-valuenow") + "%";
     sel_desc.children(".progress").children(".progress-bar").animate({
-        width:bar_width
-    },200);
+        width: bar_width
+    }, 200);
     sel_desc.siblings().children(".progress").children(".progress-bar").width(0);
     sel_desc.toggle().siblings().hide();
     //$("#skill-desc .card-title").text(name_by_id);
 });
 
-$(".project-banner").click(function() {
+$(".project-banner").click(function () {
     var name_by_id = $(this).attr("id");
-    let sel_desc = $("#"+name_by_id+"-desc");
+    let sel_desc = $("#" + name_by_id + "-desc");
     $(this).toggleClass("on");
     $(this).parent().siblings().children(".project-banner").removeClass("on");
     sel_desc.toggle().siblings().hide();
     //$("#skill-desc .card-title").text(name_by_id);
 });
 
-$("#navbarSupportedContent ul li.nav-item").click(function() {
+$("#navbarSupportedContent ul li.nav-item").click(function () {
     var scrollPosition = $($(this).attr("data-target")).offset().top;
     $("html").animate({
         scrollTop: scrollPosition
     }, 500);
 });
 
-$(".nav-item").click(function(){
+$(".nav-item").click(function () {
     $("#navbarSupportedContent").removeClass("show");
 });
 
-$("#logo").click(function() {
+$("#logo").click(function () {
     $("html").animate({
         scrollTop: 0
     }, 500);
@@ -66,12 +66,33 @@ $.each(linkArr, function (index, item) {
 */
 
 const linkObj = {
-    '.practice': defaultUrl+'/board/bbs/board.php?bo_table=pm_prac',
-    '.memo': defaultUrl+'/board/bbs/board.php?bo_table=study',
+    '.practice': defaultUrl + '/board/bbs/board.php?bo_table=pm_prac',
+    '.memo': defaultUrl + '/board/bbs/board.php?bo_table=study',
     '.community': '../html/disqus.html',
-    '.favorite': defaultUrl+'/board/bbs/board.php?bo_table=link'
+    '.favorite': defaultUrl + '/board/bbs/board.php?bo_table=link'
 };
 
 $.each(linkObj, function (index, url) {
     $(index).attr("href", url);
 })
+
+function recent_page(str) {
+    if($(window).outerWidth()>=1200){
+        if (str > 1){
+            $("#navbarSupportedContent").addClass("bigNavbar");
+            $("#navbarSupportedContent ul").removeClass("ml-auto justify-content-end").addClass("justify-content-around");
+            $("#subMenu").addClass("hideMenu");
+        }
+        else{
+            $("#navbarSupportedContent").removeClass("bigNavbar");
+            $("#navbarSupportedContent ul").addClass("ml-auto justify-content-end").removeClass("justify-content-around");
+            $("#subMenu").removeClass("hideMenu");
+        }
+    }
+
+}
+
+$(window).scroll(function () {
+    var height = $(document).scrollTop();
+    recent_page(height);
+});

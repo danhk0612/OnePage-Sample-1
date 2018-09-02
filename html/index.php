@@ -8,14 +8,15 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Webdev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link rel="shortcut icon" href="https://danhk0612.github.io/OnePage-Sample-1/favicon.ico">
-  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/normalize.css">
-  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/initialize.css">
-  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/index.css">
-  <link href="https://danhk0612.github.io/OnePage-Sample-1/css/fontawesome-all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="../favicon.ico">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/initialize.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poor+Story|Sunflower:300,700" rel="stylesheet">
 
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -24,13 +25,13 @@
 
 </head>
 <div id="loading">
-  <img id="loading-image" src="https://danhk0612.github.io/OnePage-Sample-1/img/loading.gif" alt="Loading..." />
+  <img id="loading-image" src="../img/loading.gif" alt="Loading..." />
 </div>
 
 <body id="page-top">
-  <nav class="navbar navbar-expand-xl bg-light navbar-light fixed-top">
+  <nav class="navbar navbar-expand-xl bg-dark navbar-dark fixed-top">
     <a id="logo" class="navbar-brand" href="#">
-      <h1 class="text-hide" style="background-image: url('https://danhk0612.github.io/OnePage-Sample-1/img/logo.png'); width:216px; height:28px;">webDev</h1>
+      <h1 class="text-hide" style="background-image: url('../img/logo_white.png'); width:216px; height:28px;">webDev</h1>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
@@ -40,22 +41,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto justify-content-end list-group">
         <li class="nav-item" data-target="#about-outer">
-          <a class="nav-link list-group-item-action" href="#about-outer">
+          <a class="nav-link list-group-item-action sunFlowerBold mainCategory" href="#about-outer">
             <i class="fa fa-user" aria-hidden="true"></i>About</a>
         <li class="nav-item" data-target="#skill-outer">
-          <a class="nav-link list-group-item-action" href="#skill-outer">
+          <a class="nav-link list-group-item-action sunFlowerBold mainCategory" href="#skill-outer">
             <i class="fa fa-keyboard" aria-hidden="true"></i>Skill</a>
         </li>
         <li class="nav-item" data-target="#project-outer">
-          <a class="nav-link list-group-item-action" href="#project-outer">
+          <a class="nav-link list-group-item-action sunFlowerBold mainCategory" href="#project-outer">
             <i class="fa fa-check-square" aria-hidden="true"></i>Projects</a>
         </li>
         <li class="nav-item" data-target="#resume-outer">
-          <a class="nav-link list-group-item-action" href="#resume-outer">
+          <a class="nav-link list-group-item-action sunFlowerBold mainCategory" href="#resume-outer">
             <i class="fa fa-file" aria-hidden="true"></i>Resume</a>
         </li>
         <li class="nav-item" data-target="#link-outer">
-          <a class="nav-link list-group-item-action" href="#link-outer">
+          <a class="nav-link list-group-item-action sunFlowerBold mainCategory" href="#link-outer">
             <i class="fa fa-bookmark" aria-hidden="true"></i>Link</a>
         </li>
 
@@ -75,16 +76,12 @@
               <i class="fas fa-pencil-alt"></i>Memo</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link list-group-item-action community2" href="http://webdev.mydepot.kr/html/disqus.html" target="_self">
-              <i class="fa fa-user" aria-hidden="true"></i>Community</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link list-group-item-action favorite" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=link" target="_self">
               <i class="fa fa-star" aria-hidden="true"></i>Favorite</a>
           </li>
         </div>
 
-        <li class="nav-item dropdown">
+        <li id="subMenu" class="nav-item dropdown">
           <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
             <span class="navbar-toggler-icon"></span>
           </a>
@@ -97,9 +94,6 @@
             <div class="dropdown-divider"></div>
             <a class="dropdown-item memo" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=study">
               <i class="fas fa-pencil-alt"></i>Memo</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item community2" href="http://webdev.mydepot.kr/html/disqus.html">
-              <i class="fa fa-user" aria-hidden="true"></i>Community</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item favorite" href="http://webdev.mydepot.kr/board/bbs/board.php?bo_table=link">
               <i class="fa fa-star" aria-hidden="true"></i>Favorite</a>
@@ -114,7 +108,7 @@
 
   <div class="container-fluid row bg-blue justify-content-center" id="profile-outer">
     <div id="profile" class="col-12 col-md-6">
-      <h1>WebDev에 오신것을 환영합니다.</h1>
+      <h1 class="sunFlowerBold">WebDev에 오신것을 환영합니다.</h1>
       <p>
       <?php
 if ($fp = fopen('./txt/introduce.txt', 'r')) {
@@ -131,7 +125,7 @@ if ($fp = fopen('./txt/introduce.txt', 'r')) {
   <div class="triangle triangle_right"></div>
   <div class="container-fluid row bg-white justify-content-center" id="about-outer">
     <div id="about" class="col-12 col-md-8 inner-box">
-      <h1>About</h1>
+      <h1 class="sunFlowerBold">About</h1>
       <p>
       <?php
 if ($fp = fopen('./txt/about.txt', 'r')) {
@@ -148,7 +142,7 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
   <div class="triangle triangle_left"></div>
   <div class="container-fluid row bg-blue justify-content-center" id="skill-outer">
     <div id="skill" class="col-12 col-md-8 inner-box">
-      <h1>Skill</h1>
+      <h1 class="sunFlowerBold">Skill</h1>
       <div class="row justify-content-center">
         <div class="col-auto">
           <p class="skill-icon" id="html5">
@@ -319,7 +313,7 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
   <div class="triangle triangle_right"></div>
   <div class="container-fluid row bg-white justify-content-center" id="project-outer">
     <div id="project" class="col-12 col-md-8 inner-box">
-      <h1>Project</h1>
+      <h1 class="sunFlowerBold">Project</h1>
       <div class="row justify-content-center">
         <div class="col-auto">
           <p class="project-banner" id="project-1">
@@ -360,7 +354,7 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
       <div id="project-card">
         <div class="card bg-light">
           <div class="card-body" id="project-desc">
-            <h5 class="card-title">각 배너를 클릭하시면 상세 설명이 나타납니다.</h5>
+            <h5 class="card-title sunFlower">각 배너를 클릭하시면 상세 설명이 나타납니다.</h5>
             <div class="card-text" id="project-1-desc">
 
             </div>
@@ -390,7 +384,7 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
   <div class="triangle triangle_left"></div>
   <div class="container-fluid row bg-blue justify-content-center" id="resume-outer">
     <div id="resume" class="col-12 col-md-8 inner-box">
-      <h1>Resume</h1>
+      <h1 class="sunFlowerBold">Resume</h1>
       <div class="dropdown show" id="resume-drop">
         <button type="button" class="btn btn-light btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           My Resume
@@ -408,7 +402,7 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
   <div class="triangle triangle_right"></div>
   <div class="container-fluid row bg-white justify-content-center" id="link-outer">
     <div id="link" class="col-12 col-md-8 inner-box">
-      <h1>Link</h1>
+      <h1 class="sunFlowerBold">Link</h1>
       <div class="row justify-content-center">
         <div class="col-auto">
           <p class="link-icon">
@@ -420,11 +414,6 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
             <a href="https://www.facebook.com/danhk0612" title="페이스북" target="_blank"><i class="fab fa-facebook-square"></i></a>
           </p>
         </div>
-        <div class="col-auto">
-          <p class="link-icon">
-            <a href="http://blog.mydepot.kr/" title="블로그" target="_blank"><i class="fab fa-wordpress"></i></a>
-          </p>
-        </div>
       </div>
     </div>
   </div>
@@ -432,10 +421,10 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
   </div>
   </div>
   <div id="bottom-bar" class="container-fluid row">
-    <div id="copyright" class="col-12 col-md-4">©
+    <div id="copyright" class="col-12 col-md-4 poorStory">©
       <a href="http://webdev.mydepot.kr/" target="_self">webDev</a>, All rights reserved.</div>
     <div class="col-0 col-md-6"></div>
-    <div id="mailadress" class="col-12 col-md-2">danhk0612@gmail.com</div>
+    <div id="mailadress" class="col-12 col-md-2 poorStory">danhk0612@gmail.com</div>
   </div>
 
   <script src="https://danhk0612.github.io/OnePage-Sample-1/js/vendor/modernizr-3.5.0.min.js"></script>
