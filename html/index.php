@@ -8,13 +8,13 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>Webdev</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="../css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link rel="shortcut icon" href="../favicon.ico">
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/initialize.css">
-  <link rel="stylesheet" href="../css/index.css">
-  <link href="../css/fontawesome-all.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://danhk0612.github.io/OnePage-Sample-1/favicon.ico">
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/normalize.css">
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/initialize.css">
+  <link rel="stylesheet" href="https://danhk0612.github.io/OnePage-Sample-1/css/index.min.css">
+  <link href="https://danhk0612.github.io/OnePage-Sample-1/css/fontawesome-all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poor+Story|Sunflower:300,700" rel="stylesheet">
 
@@ -432,10 +432,10 @@ if ($fp = fopen('./txt/about.txt', 'r')) {
     crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="https://danhk0612.github.io/OnePage-Sample-1/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
   <script src="https://danhk0612.github.io/OnePage-Sample-1/js/plugins.js"></script>
-  <script src="../js/index.js"></script>
+  <script src="https://danhk0612.github.io/OnePage-Sample-1/js/index.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-  <script src="../js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  <script src="https://danhk0612.github.io/OnePage-Sample-1/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(window).on('load', function () {
